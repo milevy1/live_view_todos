@@ -1,5 +1,6 @@
 defmodule LiveViewTodosWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :live_view_todos
+  socket "/live", Phoenix.LiveView.Socket
 
   socket "/socket", LiveViewTodosWeb.UserSocket,
     websocket: true,
